@@ -1,0 +1,34 @@
+<div class="tienda">
+    <div class="container">
+            {{#each arbol}}
+            <div class="card">
+                <div class="img-pokemon">
+                    <img src="{{images}}" alt="">
+                </div>
+                <div class="abilities">
+                    <p class="name-note"><b>{{title}}</b></p>
+                    <p>{{timeago date}}</p>
+                </div>
+                <a class="button-delete" href="/links/delete/{{id_arbol}}">Borrar Nota</a>
+                <a class="button-edit" href="/links/edit/{{id_arbol}}">Editar</a>
+            </div>
+            {{else}}
+            <div class="no-notas">
+                <p>Tu Vivero de notas esta vacio... :(</p>
+                <div class="create-note">
+                    <a href="./addNote">Crear Una!</a>
+                </div>
+            </div>
+            <div class="img-tierra-seca">
+                <img src="/images/tierraseca.jpg" alt="Terreno Seco" class="tierra-seca">
+            </div>
+            {{/each}}
+            <div class="card">
+                <a href="/links/addNote">
+                <div class="div-card-añadir">
+                    <p class="card-añadir">AÑADIR UNA NOTA</p>
+                </div>
+                </a>
+            </div>
+    </div>
+</div>

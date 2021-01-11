@@ -1,0 +1,34 @@
+<div class="tienda">
+    <form class="form" action="/links/addArbusto" method="POST">
+    <h2 class="form-title">Crea un Arbusto...</h2>
+    <input type="text" name="title" placeholder="Titulo">
+    {{!-- <div class="radio--group">
+        <label class="radio">
+            <input type="radio" id="arbol" name="type" value="arbol">
+            Arbol
+            <span></span>
+        </label>
+        <label class="radio">
+            <input type="radio" id="arbusto" name="type" value="arbusto">
+            Arbusto
+            <span></span>
+        </label>
+
+        <label class="radio">
+            <input type="radio" id="roca" name="type" value="roca">
+            Roca
+            <span></span>
+        </label>
+
+    </div> --}}
+    <textarea name="description" placeholder="Descripcion..."></textarea>
+    <input type="time" name="hour" placeholder="Cuando cumplira? hh:mm">
+    <select name="name">
+        <option>Que arbusto plantará?</option>
+        <option value="arbusto">Arbusto</option>
+        <option value="cerezo">Cerezo</option>
+        <option value="olivo">Olivo</option>
+    </select>
+    <button id="button">Enviar</button>
+</form>
+</div>

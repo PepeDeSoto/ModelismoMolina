@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/images/gardenwinter3.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(226, 226, 226);
+    
+}
+a{
+    text-decoration: none;
+    color: #e2e2e2;
+}
+/*********************************** NAV ********************************************/
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #31384adc;
+    transition: 0.5s;
+}
+
+.logo{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-links a:hover{
+    border-bottom: 3px solid rgb(226, 226, 226);
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all .3s ease;
+}
+
+
+/*********************************** BANNER/HEADER INDEX ********************************************/
+.backgroundindex{
+    margin-top: 0;
+    width: 100%;
+    height: 1097px;
+    background: url(/images/banner.jpg)no-repeat center center/cover;
+}
+
+
+/************************************ GAME *****************************************/
+
+.backgroundgame{
+    width: 100%;
+    height: 608px;
+    background: url(/backgroundgame/sky.png);
+}
+.background1{
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: 472px;
+    background: url(/backgroundgame/clouds.png);
+}
+.background2{
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    height: 200px;
+    background: url(/backgroundgame/bosque2.png);
+}
+.background3{
+    position: absolute;
+    top: 370px;
+    width: 100%;
+    height: 200px;
+    background: url(/backgroundgame/bosque.png);
+}
+.background4{
+    position: absolute;
+    top: 420px;
+    width: 100%;
+    height: 240px;
+    background: url(/backgroundgame/arbusto1redi.png);
+}
+.background5{
+    position: absolute;
+    top: 420px;
+    width: 100%;
+    height: 240px;
+    background: url(/backgroundgame/arbusto2redi.png);
+}
+.suelo{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 650px;
+    background: url(/backgroundgame/suelo.png);
+    
+}
+.garden-tree{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.tree-game1{
+    position: relative;
+    top: 790px;
+}
+.tree-game1 img{
+    width: 100%;
+}
+
+
+/*********************************** AÑADIR NOTA ********************************************/
+.container-add-note{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+/*********************************** TIENDA ********************************************/
+
+.tienda{
+    margin-top: 12vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+.card{
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.5s;
+
+    
+}
+
+.card:hover{
+    transform: translatey(-20px);
+    background-color: #b9b9b97a;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.abilities{
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.75s ease-out;
+    background-color: #31384adc;
+    padding: 16px;
+}
+.img-pokemon{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50%;
+}
+.img-pokemon img{
+    transition: all 0.75s ease-out;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.name-note{
+    text-transform: uppercase;
+    border-left: 4px solid rgb(226, 226, 226);
+    border-bottom: 4px solid rgb(226, 226, 226);
+    border-radius: 3px;
+    width: auto;
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+.button-delete,.button-edit{
+    box-sizing: content-box;
+    padding: 7px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+    background: #31384a;
+    color: rgb(226, 226, 226);
+}
+
+.no-notas{
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,.4);
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 7px;
+   
+    padding: 30px;
+}
+.no-notas p{
+    color: rgb(226, 226, 226);
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.img-tierra-seca{
+    width: 450px;
+    margin: auto;
+}
+
+.tierra-seca{
+    border-radius: 50%;
+    width: 100%;
+}
+.create-note{
+    transition-duration: 0.4s;
+    background: #31384a;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.create-note a{
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.create-note:hover{
+    cursor: pointer;
+    background: #3e475f;
+}
+.div-card-añadir{
+    background: #3e475f;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.75s ease-out;
+    background-color: #31384adc;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.card-añadir{
+    font-size: 56px;
+    letter-spacing: 3px;
+    color: #e2e2e2;
+}
+
+
+/*********************************** FORM ********************************************/
+.form{
+    width: 450px;
+    margin: auto;
+    margin-top: 12vh;
+    background: rgba(0,0,0,.4);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+.form-title{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input,textarea,button, select{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+}
+#arbol,#arbusto,#roca{
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+}
+.radio{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.radio + .radio{
+    margin-left: 20px;
+}
+.radio input[type="radio"]{
+    display:none;
+}
+.radio span{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border:3px solid #fff;
+    display:block;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    
+}
+.radio span:after{
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%) scale(0);
+    border-radius: 50%;
+    transition: 300ms ease-in-out 0s;
+}
+.radio input[type = "radio"]:checked ~ span:after{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+textarea{
+    margin-top: 10px;
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+#button{
+    transition-duration: 0.4s;
+    background: #31384a;    
+    padding: 18px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#button:hover{
+    cursor: pointer;
+    background: #3e475f;
+}
+
+
+/********************************************************* RESPONSIVE *********************************************************/
+
+@media screen and (max-width:1424px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:1024px){
+    .nav-links{
+       width: 60%;
+    }
+
+    .container,.container-add-note{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+}
+
+@media screen and (max-width:720px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .container,.container-add-note{
+        display:block;
+        width: 100%;
+        max-width: none;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #31384adc;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translatex(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+}
+
+.nav-active{
+    transform: translateX(0);
+}
+
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate( 45deg) translate(-5px,-6px);
+    
+}
